@@ -1,0 +1,114 @@
+[
+    {
+        "marka": "Honda",
+        "model": "CB500F",
+        "godiste": 2019,
+        "kilometri": "10,000 km",
+        "snaga": "35 kW",
+        "obujam": "471 cm^3",
+        "prodavac": "Ana Kovač",
+        "telefon": "987-654-321",
+        "slika":"mt07.jpeg"
+    },
+    {
+        "marka": "Suzuki",
+        "model": "SV650",
+        "godiste": 2017,
+        "kilometri": "20,000 km",
+        "snaga": "56 kW",
+        "obujam": "645 cm^3",
+        "prodavac": "Marko Novak",
+        "telefon": "555-555-555"
+    },
+    {
+        "marka": "Kawasaki",
+        "model": "Ninja 650",
+        "godiste": 2020,
+        "kilometri": "5,000 km",
+        "snaga": "50 kW",
+        "obujam": "649 cm^3",
+        "prodavac": "Petra Kralj",
+        "telefon": "111-111-111"
+    },
+    {
+        "marka": "Harley-Davidson",
+        "model": "Iron 883",
+        "godiste": 2015,
+        "kilometri": "25,000 km",
+        "snaga": "39 kW",
+        "obujam": "883 cm^3",
+    "prodavac": "Stjepan I. Simic",
+        "telefon": "222-222-222"
+    },
+    {
+        "marka": "Ducati",
+        "model": "Monster 821",
+        "godiste": 2016,
+        "kilometri": "18,000 km",
+        "snaga": "82 kW",
+        "obujam": "821 cm^3",
+        "prodavac": "Marta Lukic",
+        "telefon": "333-333-333"
+    },
+    {
+        "marka": "BMW",
+        "model": "F 750 GS",
+        "godiste": 2019,
+        "kilometri": "12,000 km",
+        "snaga": "57 kW",
+        "obujam": "853 cm^3",
+        "prodavac": "Luka Horvat",
+        "telefon": "444-444-444"
+    },
+    {
+        "marka": "Aprilia",
+        "model": "Tuono V4 1100 Factory",
+        "godiste": 2017,
+        "kilometri": "15,000 km",
+        "snaga": "129 kW",
+        "obujam": "1077 cm^3",
+        "prodavac": "Ivana Kovacic",
+        "telefon": "666-666-666"
+    },
+    {
+        "marka": "Triumph",
+        "model": "Street Triple RS",
+        "godiste": 2018,
+        "kilometri": "14,000 km",
+        "snaga": "90 kW",
+        "obujam": "765 cm^3",
+        "prodavac": "Marko Barici",
+        "telefon": "777-777-777"
+    },
+    {
+        "marka": "KTM",
+        "model": "790 Duke",
+        "godiste": 2020,
+        "kilometri": "8,000 km",
+        "snaga": "77 kW",
+        "obujam": "799 cm^3",
+        "prodavac": "Ivana Maric",
+        "telefon": "888-888-888"
+    },
+    {
+        "marka": "o",
+        "model": "joi",
+        "godiste": "ji",
+        "kilometri": "ji",
+        "snaga": "ji",
+        "obujam": "jio",
+        "prodavac": "ji",
+        "telefon": "jiojoi"
+    },
+    {
+        "marka": "jb",
+        "model": "kjb",
+        "godiste": "kjb",
+        "kilometri": "kjb",
+        "snaga": "kb",
+        "obujam": "kjbkj",
+        "prodavac": "bk",
+        "telefon": "jb"
+    }
+]
+

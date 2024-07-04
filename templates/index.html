@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodaja motocikala</title>
+    <style>
+        body {
+            background-image: url("/static/pozadinskaslika.jpg");
+            background-size: cover;
+            text-transform: uppercase;
+            text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); 
+            background-position: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-weight: bolder;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.7); /* Ispuna sa prozirnošću */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 100px auto; /* Postavljanje margina za centriranje */
+            max-width: 600px; /* Maksimalna širina kontejnera */
+        }
+
+        h1 {
+            font-size: 3em;
+            color: red;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            color: yellow;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid red;
+            color: red;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            background-color: gray;
+        }
+
+        a:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prodaja motocikala</h1>
+        <p>Dobrodošli na našu stranicu za prodaju rabljenih motocikala!</p>
+        <p>Molimo registrirajte se ili prijavite kako biste nastavili, ili nastavite bez prijave.</p>
+        <ul>
+            <li><a href="{{ url_for('register') }}">Registracija</a></li>
+            <li><a href="{{ url_for('login') }}">Prijava</a></li>
+            <li><a href="{{ url_for('dashboard') }}">Nastavi bez prijave</a></li>
+        </ul>
+    </div>
+</body>
+</html>

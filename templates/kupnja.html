@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOSTUPNI MOTOCIKLI ZA PRODAJU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        strong {
+            color: #555;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin: 10px auto;
+        }
+        p {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOSTUPNI MOTOCIKLI ZA PRODAJU</h1>
+
+    <ul>
+        {% for motor in primjeri_motora %}
+        <li>
+            <strong>Marka:</strong> {{ motor['marka'] }}<br>
+            <strong>Model:</strong> {{ motor['model'] }}<br>
+            <strong>Godište:</strong> {{ motor['godiste'] }}<br>
+            <strong>Broj kilometara:</strong> {{ motor['kilometri'] }}<br>
+            <strong>Snaga:</strong> {{ motor['snaga'] }}<br>
+            <strong>Obujam:</strong> {{ motor['obujam'] }}<br>
+            <strong>Prodavač:</strong> {{ motor['prodavac'] }}<br>
+            <strong>Broj telefona prodavača:</strong> {{ motor['telefon'] }}<br>
+            {% if motor.get('slika') %}
+            <!-- Generiraj URL putanju za sliku -->
+            <img src="{{ url_for('static', filename=motor['slika']) }}" alt="{{ motor['marka'] }} {{ motor['model'] }}">
+            {% else %}
+            <!-- Ako slika nije definirana, prikaži poruku -->
+            <p>Slika nije dostupna</p>
+            {% endif %}
+            {% if motor.get('cijena') %}
+            <strong>Cijena (EUR):</strong> {{ motor['cijena'] }}<br>
+            {% else %}
+            <p>Cijena nije navedena</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
